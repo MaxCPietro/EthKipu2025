@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_n2",
+						"type": "uint256"
+					}
+				],
+				"name": "sum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SumarDosNumeros.sol": "SumaDosNumeros"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SumarDosNumeros.sol": {
+			"keccak256": "0x7224a6c6d056c26ca6ed0c111b706e7f17116dadb5631fcb09422b8504f3ae46",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://67e8ac0d6b8320a66ef7820ec01a8482e412cc783b79b7a0676aa830505cdadd",
+				"dweb:/ipfs/QmXQ5xfrcgRAKrQnp2kDb63sU3EACAxgKRz7WDymLc1AXW"
+			]
+		}
+	},
+	"version": 1
+}

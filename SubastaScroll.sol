@@ -112,7 +112,14 @@ contract SubastaScroll {
     }
 
     //5.4 - función finalizarSubasta
-    function finalizarSubasta() external verificarPropietarioMod subastaFinalizadaMod {}
+    function finalizarSubasta() external verificarPropietarioMod subastaFinalizadaMod {
+        require(!finalizada,"Ya finalizada");
+        finalizada = true;
+
+        emit subastaFinalizada(mejorOferta.ofertante, mejorOferta.monto);
+        
+        payable(propietario).transfer(mejorOferta.monto);
+    }
 
     //5.5 - Función verGanador()
     function verGanador() external view subastaFinalizadaMod returns(address,uint){
